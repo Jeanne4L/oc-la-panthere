@@ -1,7 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    background-image: url("img/agence-la-panthere.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 10%;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -22,7 +26,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    /*padding: 0 50px;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -36,24 +40,24 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 100px 0;
 }
 
 .bloc-md {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 20px 0;
 }
 
-.bg-t-edge,
+/*.bg-t-edge,
 .bg-repeat {
     -webkit-background-size: auto!important;
     -moz-background-size: auto!important;
     -o-background-size: auto!important;
     background-size: auto!important;
-}
+}*/
 
 .bg-repeat {
     background: repeat;
@@ -63,7 +67,7 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
+/*.bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
     position: absolute;
@@ -76,7 +80,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -96,9 +100,9 @@ a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.l-bloc {
+/*.l-bloc {
     color: rgba(0, 0, 0, .5);
-}
+}*/
 
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
@@ -116,6 +120,56 @@ a:hover {
 
 .l-bloc .navbar-toggle .icon-bar {
     color: rgba(0, 0, 0, .6);
+}
+
+.avoidance {
+    display: inline-block;
+    position: fixed;
+    top: 100px;
+    z-index: 1;
+}
+
+.avoidance-icon {
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    max-height: 55.13px;
+    border: solid 2px #364577;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    transform: translateX(-85px);
+    transition-duration: 200ms;
+}
+
+.avoidance ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 25px 0 10px;
+    transform: translateX(-114.04px);
+    transition-duration: 200ms;
+    /*height: 0;
+    overflow: hidden;*/
+}
+
+.avoidance li {
+    color: #364577;
+    background-color: rgba(255 , 255, 255, .7);
+    border-bottom: solid 1px gray;
+    padding: 0px 10px;
+    
+}
+
+.fa-universal-access {
+    font-size: 3rem;
+    color: #364577;
+}
+
+.avoidance:hover > ul {
+    transform: translateX(0);
+}
+
+
+.avoidance:hover > .avoidance-icon {
+    transform: translateX(0);
 }
 
 .voffset {
@@ -316,7 +370,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .hero-bloc-text {
@@ -380,13 +434,17 @@ h1 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(54, 69, 119, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+}
+
+.bgc-transparent {
+    background-color: transparent;
 }
 
 .bgc-white {
@@ -444,6 +502,14 @@ h1 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+.address {
+    height: 415.2px;
+}
+
+.address h2, .address p {
+    color: white!important;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -470,9 +536,9 @@ h1 {
 }
 
 @media (max-width: 991px) {
-    .container {
+    /*.container {
         width: 100%;
-    }
+    }*/
     .b-parallax {
         background-attachment: scroll;
     }
