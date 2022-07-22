@@ -133,7 +133,7 @@ a:hover {
     text-align: right;
     padding: 10px 10px 10px 10px;
     max-height: 55.13px;
-    border: solid 2px #364577;
+    border: solid 2px #303030;
     border-left: none;
     border-radius: 0 50px 50px 0;
     transform: translateX(-85px);
@@ -151,8 +151,8 @@ a:hover {
 }
 
 .avoidance li {
-    color: #364577;
-    background-color: rgba(255 , 255, 255, .7);
+    color: #303030;
+    background-color: white;
     border-bottom: solid 1px gray;
     padding: 0px 10px;
     
@@ -160,7 +160,7 @@ a:hover {
 
 .fa-universal-access {
     font-size: 3rem;
-    color: #364577;
+    color: #303030;
 }
 
 .avoidance:hover > ul {
@@ -369,6 +369,45 @@ a {
     color: #575757!important;
 }
 
+#presentation h1 {
+    margin-top: 0;
+}
+
+#presentation p {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.03rem;
+}
+
+#feedback p {
+    font-size: 1.4rem;
+    letter-spacing: 0.03rem;
+}
+
+#feedback p:last-child{
+    margin-bottom: 0;
+}
+
+footer p {
+    margin-bottom: 20px;
+    /*color: #313F6D!important;*/
+    /*color: #364577!important;*/
+    color: #303030!important;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li, footer a, footer span, footer h3 {
+    /*color: #313F6D!important;*/
+    /*color: #364577!important;*/
+    color: #303030!important;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+}
 .container {
     max-width: 1200px;
 }
@@ -397,7 +436,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: 20px auto 30px auto;
 }
 
 h2 {
@@ -434,17 +473,14 @@ h1 {
 }
 
 .black-background {
-    background-color: rgba(54, 69, 119, 0.7);
+    /*background-color: rgba(54, 69, 119, 0.7);*/
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
-}
-
-.bgc-transparent {
-    background-color: transparent;
 }
 
 .bgc-white {
@@ -456,7 +492,8 @@ h1 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    /*background-color: #F3976C;*/
+    background-color: #F28552;
 }
 
 .tc-white {
@@ -464,13 +501,13 @@ h1 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: linear-gradient( #F2743A, #CC6231);
+    color: white!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: white!important;
+    color: #364577!important;
 }
 
 .ltc-white {
