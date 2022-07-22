@@ -546,17 +546,21 @@ h1 {
     background-image: url("img/image-de-presentation.bmp");
 }
 
+#contact p {
+    font-size: 1.4rem;
+}
+
 .address {
     width: auto;
     margin-left: 30px;
 }
 
-.address h2, .address p {
+label, .address h2 {
     color: white!important;
 }
 
-label {
-    color: white!important;
+.address p {
+    color: #F28552!important;
 }
 
 @media (max-width: 1024px) {
