@@ -1997,22 +1997,11 @@ pre code {
     }
 }
 
-/*@media (min-width:1200px) {
-    .container {
-        width: 1170px
-    }
-}*/
-
 .container-fluid {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto
-}
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px
 }
 
 .col-lg-1,
