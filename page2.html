@@ -26,28 +26,22 @@
 
 <!-- Navigation -->
 		<main>	
-			<div class="avoidance text-center" tabindex="0">
-				<div class="avoidance-icon bgc-white">
+			<nav class="dropdown avoidance">
+				<div class="btn btn-secondary dropdown-toggle avoidance-icon bgc-white"  aria-label="Accès au contenu" tabindex="1" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<i class="fa-solid fa-universal-access"></i>
 				</div>
-				<ul>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 					<li>
-						<a href="#header" tabindex="0">
-							En-tête
-						</a>
+						<a class="dropdown-item" href="#header">En-tête</a>
 					</li>
 					<li>
-						<a href="#contact" tabindex="0">
-							Formulaire
-						</a>
+						<a class="dropdown-item" href="#contact">Contact</a>
 					</li>
 					<li>
-						<a href="#footer" tabindex="0">
-							Pied de page
-						</a>
+						<a class="dropdown-item" href="#footer">Pied de page</a>
 					</li>
 				</ul>
-			</div>
+			</nav>
 <!-- Navigation END -->
 
 <!-- Header -->
@@ -55,7 +49,7 @@
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg" alt="Logo de l'agence La Panthère, tête de panthère" height="40" /></a>
+							<img src="img/agence-la-panthere-monochrome.jpg" alt="Logo de l'agence La Panthère, tête de panthère" height="40" />
 							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 								<span class="sr-only">Menu de navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
@@ -143,23 +137,31 @@
 							</p>
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="#"><span class="fa fa-twitter icon-md"></span></a>
+									<div class="text-center" tabindex="0">
+										<a class="social" href="#" aria-label="Twitter- Icône oiseau">
+											<span class="fa fa-twitter icon-md"></span>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="text-center" tabindex="0">
+										<a class="social" href="#"aria-label="Facebook- Lettre f">
+											<span class="fa fa-facebook icon-md"></span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#"><span class="fa fa-facebook icon-md"></span></a>
+										<a class="social" href="#" aria-label="Dribbble- Icône ballon de basket">
+											<span class="fa fa-dribbble icon-md"></span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="#"><span class="fa fa-dribbble icon-md"></span></a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="#"><span class="fa fa-instagram icon-md"></span></a>
+									<div class="text-center" tabindex="0">
+										<a class="social" href="#" aria-label="Instagram- Icône appareil polaroïde">
+											<span class="fa fa-instagram icon-md"></span>
+										</a>
 									</div>
 								</div>
 							</div>
