@@ -27,7 +27,7 @@
 <!-- Navigation -->
 		<main>	
 			<nav class="dropdown avoidance">
-				<div class="btn btn-secondary dropdown-toggle avoidance-icon bgc-white"  aria-label="Accès au contenu" tabindex="1" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<div class="btn btn-secondary dropdown-toggle avoidance-icon bgc-white"  aria-label="Accès au contenu" role="button" tabindex="0" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<i class="fa-solid fa-universal-access"></i>
 				</div>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -48,8 +48,8 @@
 			<header class="bgc-white" id="header">
 				<div class="container bloc-sm">
 					<nav class="navbar row">
-						<div class="navbar-header">
-							<img src="img/agence-la-panthere-monochrome.jpg" alt="Logo de l'agence La Panthère, tête de panthère" height="40" />
+						<div class="navbar-header" role="tablist">
+							<img src="img/agence-la-panthere-monochrome.jpg" alt="Logo de l'agence La Panthère, tête de panthère" role="tab" tabindex="0" />
 							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 								<span class="sr-only">Menu de navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
@@ -69,16 +69,16 @@
 <!-- Form -->
 			<div class="bloc l-bloc" id="contact">
 				<div class="container bloc-lg text-center">
-					<div class="row black-background inline-block text-left">
-						<h1 class="text-center hero-bloc-text white" tabindex="0">
+					<div class="row black-background inline-block text-left" role="tablist">
+						<h1 class="text-center hero-bloc-text white" role="tab" tabindex="0">
 							Parlons web design !
 						</h1>
-						<p class="text-center mg-lg white" tabindex="0">
+						<p class="text-center mg-lg white" role="tab" tabindex="0">
 							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 						</p>
 						<div class="col-sm-6">
-							<form id="form_1" novalidate success-msg="Votre message a bien été envoyé." fail-msg="Il semblerait que notre serveur ne réponde pas, veuillez nous excuser pour ce désagrément!">
+							<form id="form_1" novalidate data-success-msg="Votre message a bien été envoyé." data-fail-msg="Il semblerait que notre serveur ne réponde pas, veuillez nous excuser pour ce désagrément!">
 								<div class="form-group">
 									<label for="name">
 										Nom
@@ -109,16 +109,16 @@
 							</form>
 						</div>
 						<div class="col-sm-6 address">
-							<h2 tabindex="0">Email</h2>
-							<p tabindex="0">
+							<h2 role="tab" tabindex="0">Email</h2>
+							<p role="tab" tabindex="0">
 								contact@agencelapanthere.com
-							</p tabindex="0">
-							<h2 tabindex="0">Adresse</h2>
-							<p tabindex="0">
+							</p>
+							<h2 role="tab" tabindex="0">Adresse</h2>
+							<p role="tab" tabindex="0">
 								2 place Sathonay 69001 Lyon
 							</p>
-							<h2 tabindex="0">Horaires</h2>
-							<p tabindex="0">
+							<h2 role="tab" tabindex="0">Horaires</h2>
+							<p role="tab" tabindex="0">
 								Ouvert de 9h à 18h, du lundi au vendredi
 							</p>
 						</div>
@@ -131,35 +131,35 @@
 			<footer class="bloc bgc-atomic-tangerine d-bloc" id="footer">
 				<div class="container bloc-sm">
 					<div class="row">
-						<div class="col-sm-12">
-							<p class="text-center" tabindex="0">
+						<div class="col-sm-12" role="tablist">
+							<p class="text-center" role="tab" tabindex="0">
 								Agence La Panthère - Agence web basée à Lyon.<br>
 							</p>
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
-									<div class="text-center" tabindex="0">
-										<a class="social" href="#" aria-label="Twitter- Icône oiseau">
+									<div class="text-center">
+										<a class="social" href="https://twitter.com" aria-label="Twitter- Icône oiseau">
 											<span class="fa fa-twitter icon-md"></span>
 										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="text-center" tabindex="0">
-										<a class="social" href="#"aria-label="Facebook- Lettre f">
+									<div class="text-center">
+										<a class="social" href="https://fr-fr.facebook.com/" aria-label="Facebook- Lettre f">
 											<span class="fa fa-facebook icon-md"></span>
 										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" aria-label="Dribbble- Icône ballon de basket">
+										<a class="social" href="https://dribbble.com/" aria-label="Dribbble- Icône ballon de basket">
 											<span class="fa fa-dribbble icon-md"></span>
 										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="text-center" tabindex="0">
-										<a class="social" href="#" aria-label="Instagram- Icône appareil polaroïde">
+									<div class="text-center">
+										<a class="social" href="https://www.instagram.com/" aria-label="Instagram- Icône appareil polaroïde">
 											<span class="fa fa-instagram icon-md"></span>
 										</a>
 									</div>

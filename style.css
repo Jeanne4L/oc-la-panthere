@@ -102,10 +102,15 @@ header img {
 .avoidance {
     position: fixed;
     z-index: 3;
+    top: 100px;
+}
+
+.avoidance-icon {
+    border: solid 2px #575757;
 }
 
 .avoidance-icon:focus > .fa-universal-access{
-    color: #CC6231;
+    color: rgba(87, 87, 87, .7);
 }
 
 .fa-universal-access {
@@ -139,6 +144,7 @@ header img {
     top: -5px;
     border: none;
     background-color: transparent;
+    z-index: 3;
 }
 
 .close-lightbox span {
@@ -242,16 +248,6 @@ h1 {
     width: 26px;
 }
 
-/*@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-}*/
-
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -303,21 +299,6 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-}
-
-.scrollToTop {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    z-index: 500;
-    transition: all .3s ease-in-out;
-}
-
-.scrollToTop span {
-    margin-top: 6px;
 }
 
 a[data-lightbox] {
@@ -431,9 +412,21 @@ p {
     font-weight: 700;
 }
 
+.cta-hero:focus {
+    border-color: white;
+}
+
 .social {
     max-width: 400px;
     margin: 20px auto 30px auto;
+}
+
+.social-icon:focus {
+    text-decoration: none;
+}
+
+.social-icon:focus > span{
+    color: white!important;
 }
 
 h2 {
@@ -470,8 +463,9 @@ h1 {
 }
 
 .black-background {
-    /*background-color: rgba(54, 69, 119, 0.7);*/
     background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: #575757;*/
+    /*background-color: #303030;*/
     padding: 40px 40px 40px 40px;
 }
 
@@ -566,13 +560,13 @@ label, .address h2 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -585,10 +579,6 @@ label, .address h2 {
     main {
         overflow-x: hidden;
         position: relative;
-    }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -617,15 +607,7 @@ label, .address h2 {
         background-attachment: scroll;
     }
     .avoidance {
-        top: 15px;
-    }
-    .navbar-toggle {
-        position: absolute;
-        right: 10px;
-    }
-    .navbar-header {
-        display: flex;
-        justify-content: center;
+        top: 130px;
     }
     .navbar .nav {
         padding-top: 0;
@@ -755,5 +737,12 @@ label, .address h2 {
     }
     .modal-body {
         padding: 0;
+    }
+    header img {
+        height: 35px;
+        width: auto;
+    }
+    .navbar-toggle .icon-bar {
+        width: 22px;
     }
 }
