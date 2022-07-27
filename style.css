@@ -386,6 +386,7 @@ footer li, footer a, footer span, footer h3 {
 footer h3 {
     font-size: 1.5rem;
 }
+
 .container {
     max-width: 1200px;
 }
@@ -464,8 +465,6 @@ h1 {
 
 .black-background {
     background-color: rgba(0, 0, 0, 0.5);
-    /*background-color: #575757;*/
-    /*background-color: #303030;*/
     padding: 40px 40px 40px 40px;
 }
 
