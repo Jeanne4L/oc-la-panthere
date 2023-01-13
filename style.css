@@ -111,9 +111,6 @@ button {
 .bg-t-edge {
     background: top no-repeat;
 }
-.b-parallax {
-    background-attachment: fixed;
-}
 
 .bgc-white {
     background-color: #FFFFFF;
@@ -270,7 +267,8 @@ header img {
     justify-content: space-between;
 }
 .presentation__description {
-    margin: 25px 15px 0 15px;
+    margin: 0 15px;
+    min-width: 400px;
 }
 .presentation__description span, .presentation__description strong {
     font-weight: bold;
@@ -281,16 +279,17 @@ header img {
 }
 #presentation h1, #contact h1 {
     font-size: 5rem;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     color: black !important;
 }
 #presentation p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     line-height: 2.4rem;
     font-size: 1.6rem;
 }
 #presentation img {
     width: 60%;
+    max-height: 405px;
 }
 
 /*                                                                          */
@@ -320,7 +319,7 @@ header img {
 .card {
     box-shadow: 0px 0px 11px 3px rgb(0 0 0 / 20%);
     border-radius: 20px;
-    height: 300px;
+    min-height: 300px;
     width: 27%;
     padding: 20px;
 }
@@ -491,9 +490,6 @@ footer h3 {
     display: flex;
     padding: 10px 0 50px 0;
 }
-#contact h1 {
-    margin-bottom: 25px;
-}
 #contact img {
     height: 350px;
 }
@@ -507,7 +503,7 @@ footer h3 {
     width: 100%;
 }
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border-color: rgba(0, 0, 0, .15);
     box-shadow: none;
 }
 input:focus, textarea:focus {
@@ -519,75 +515,62 @@ input:focus, textarea:focus {
 /*                               MEDIA QUERIES                              */
 /*                                                                          */
 @media (max-width: 1024px) {
-    .bloc {
+    .bloc:not(#feedback) {
         padding-left: 20px;
         padding-right: 20px;
     }
-}
 
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
+    #presentation .tight-width-whitespace {
+        flex-direction: column-reverse;
+        align-items: center;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1366px) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media (max-width: 991px) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    main {
-        overflow-x: hidden;
-        position: relative;
-    }
-}
-
-@media (max-width: 875px) {
-    #contact .col-sm-6 {
-        width: 100%;
-    }
-    .address {
-        margin: 20px 0 0 0;
+    .presentation__description, #presentation h1, #presentation p {
         text-align: center;
+    }
+
+    #services h2 {
+        margin-bottom: 0;
+    }
+    #services .voffset-lg {
+        margin-top: 50px;
+    }
+
+    #contact .container {
+        flex-direction: column-reverse;
+    }
+    .column {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+    .contact__form {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    #contact .tc-orange {
+        color: #575757 !important;
     }
 }
 
 @media (max-width: 768px) {
-    main {
-        overflow-x: hidden;
-        position: relative;
-    }
     h1,
     h2,
     p {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
-    .b-parallax {
-        background-attachment: scroll;
-    }
     .avoidance {
         top: 130px;
+    }
+    .navbar-header {
+        width: 90%;
+        margin: auto;
     }
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
-    }
-    .navbar.row {
-        margin-left: 0;
-        margin-right: 0;
     }
     .site-navigation {
         position: inherit;
@@ -603,6 +586,9 @@ input:focus, textarea:focus {
         padding-left: 15px;
         width: 100%;
     }
+    .nav > li > a {
+        text-align: center;
+    }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
@@ -615,10 +601,6 @@ input:focus, textarea:focus {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
-    }
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
     }
     .bloc-lg {
         padding: 40px 0;
@@ -639,9 +621,23 @@ input:focus, textarea:focus {
     #services p {
         width: 80%;
         margin: auto;
+        font-size: 1.5rem;
     }
     #services .col-sm-4 {
         margin-top: 20px;
+    }
+    #services .voffset-lg {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .card {
+        width: 80%;
+        min-height: 200px;
+        padding-bottom: 30px;
+    }
+    #feedback p {
+        width: 80%;
     }
     #portfolio h3, #portfolio p {
         width: 100%;
@@ -665,24 +661,71 @@ input:focus, textarea:focus {
     footer .col-sm-4:first-of-type {
         width: 30%;
     }
-    .wrap {
-        display: flex;
-        flex-direction: column;
+    .social {
+        margin-top: 10px;
+    }
+
+    #contact .col-sm-6 {
+        padding: 0;
+    }
+    .column, .contact__form {
+        width: 100%;
+    }
+    #contact img, .address {
+        width: 50%;
+        height: auto;
     }
 }
 
 @media (max-width: 540px) {
+    .bloc:not(#feedback) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    form {
+        text-align: center;
+    }
     #contact .bloc-lg {
         padding: 0;
     }
+    .contact__form {
+        margin-bottom: 20px;
+    }
+    #contact h1 {
+        font-size: 4rem;
+    }
+    .address {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    #contact img {
+        display: none;
+    }
+
+
+    #presentation img, .presentation__description {
+        width: 100%;
+        min-width: 0;
+    } 
+    .card {
+        width: 90%;
+    }
     .portfolio-row {
         flex-direction: column;
+        margin: 0;
     }
     #portfolio .col-sm-6 {
-        margin: 0 auto 20px auto;
+        margin: 0 auto 30px auto;
+        width: auto;
     }
     #portfolio h2 {
         margin-top: 20px;
+    }
+    #portfolio h3 {
+        height: auto;
+    }
+    #portfolio p {
+        font-size: 1.4rem;     
     }
     .bloc-lg {
         padding: 0;
@@ -690,19 +733,18 @@ input:focus, textarea:focus {
     .fa-universal-access {
         font-size: 2.5rem;
     }
+    #feedback .tight-width-whitespace {
+        padding: 20px 0;
+    }
+    #feedback p {
+        width: 100%;
+    }
     footer .row {
         margin: 0;
     }
 }
 
 @media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    #feedback .black-background {
-        padding: 40px 10px;
-    }
     .modal-body {
         padding: 0;
     }

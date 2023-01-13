@@ -8,8 +8,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 			<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-			<!-- <link rel="stylesheet" type="text/css" href="./css/style.min.css"> -->
-			<link rel="stylesheet" type="text/css" href="style.css">
+			<link rel="stylesheet" type="text/css" href="./css/style.min.css">
 
 		<script src="https://kit.fontawesome.com/eafcd51cfc.js" crossorigin="anonymous"></script>
 			<script src="./js/jquery-2.1.0.js"></script>
@@ -49,7 +48,7 @@
 				<div class="container bloc-sm">
 					<nav class="navbar row">
 						<div class="navbar-header" role="tablist">
-							<img src="img/agence-la-panthere-monochrome.jpg" alt="Logo de l'agence La Panthère, tête de panthère" role="tab" tabindex="0" />
+							<img src="img/agence-la-panthere-monochrome.jpg" alt="Logo de l'agence La Panthère, tête de panthère" role="tab" tabindex="0">
 							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 								<span class="sr-only">Menu de navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
@@ -71,7 +70,7 @@
 				<div class="container bloc-lg text-center">
                     <div class="column">
                         <img src="img/contact__background.jpg" alt="dessin vectoriel web designers">
-                        <div class="col-sm-6 address">
+                        <div class="col-sm-6 address" role="tablist">
                             <h2 role="tab" tabindex="0">Email</h2>
                             <p role="tab" tabindex="0" class="tc-orange">
                                 contact@agencelapanthere.com
@@ -100,23 +99,23 @@
 									<label for="name">
 										Nom
 									</label>
-									<input type="text" name="name" id="name" class="form-control" autocomplete="name" required />
+									<input type="text" name="name" id="name" class="form-control" autocomplete="name" required>
 								</div>
 								<div class="form-group">
 									<label for="email">
 										Adresse email
 									</label>
-									<input type="email" name="email" id="email" class="form-control" autocomplete="email" required />
+									<input type="email" name="email" id="email" class="form-control" autocomplete="email" required>
 								</div>
 								<div class="form-group">
 									<label for="acquisition_channel">
 										Comment nous avez-vous connu ?
 									</label>
-									<input type="text" name="acquisition_channel" class="form-control" required id="acquisition_channel" />
+									<input type="text" name="acquisition_channel" class="form-control" required id="acquisition_channel">
 								</div>
 								<div class="form-group">
 									<label for="project_description">
-										Brief de votre projet (Détaillez autant que nécessaire)<br>
+										Détaillez votre projet<br>
 									</label>
 									<textarea name="project_description" id="project_description" class="form-control" rows="4" cols="50" required></textarea>
 								</div> 
@@ -131,11 +130,13 @@
 <!-- Form END -->
 
 <!-- Footer -->
-            <footer class="bloc d-bloc bgc-atomic-tangerine" role="tablist">
-                <p class="text-center" role="tab" tabindex="0">
-                    <strong>La Panthère</strong><br/>
-                    Agence web basée à Lyon.
-                </p>
+            <footer class="bloc d-bloc bgc-atomic-tangerine">
+                <div role="tablist">
+                    <p class="text-center" role="tab" tabindex="0">
+                        <strong>La Panthère</strong><br>
+                        Agence web basée à Lyon.
+                    </p>
+                </div>
                 <div class="row row-no-gutters social">
                     <div class="col-sm-3">
                         <div class="text-center">
