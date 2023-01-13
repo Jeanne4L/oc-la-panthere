@@ -55,7 +55,7 @@ $(function()
 			   		{
 						if($('#form-alert').length == 0)
 						{
-							$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+$form.attr('data-fail-msg')+"</strong></div></div>");
+							$form.append("<div id='form-alert'><div class='alert alert-danger' role='tab' tabindex='0'><strong>"+$form.attr('data-fail-msg')+"</strong><button type='button' class='close' data-dismiss='alert' aria-hidden='false'>&times;</button></div></div>");
 						}	
 			   		},
 		   		});

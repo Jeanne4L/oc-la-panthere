@@ -7,10 +7,10 @@
 		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 		
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-			<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-			<link rel="stylesheet" type="text/css" href="./css/style.css">
-		
-		
+			<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+			<!-- <link rel="stylesheet" type="text/css" href="./css/style.min.css"> -->
+			<link rel="stylesheet" type="text/css" href="style.css">
+
 		<script src="https://kit.fontawesome.com/eafcd51cfc.js" crossorigin="anonymous"></script>
 			<script src="./js/jquery-2.1.0.js"></script>
 			<script src="./js/bootstrap.js"></script>
@@ -67,13 +67,30 @@
 <!-- Header END -->
 
 <!-- Form -->
-			<div class="bloc l-bloc" id="contact">
+			<section class="bloc l-bloc" id="contact">
 				<div class="container bloc-lg text-center">
-					<div class="row black-background inline-block text-left" role="tablist">
+                    <div class="column">
+                        <img src="img/contact__background.jpg" alt="dessin vectoriel web designers">
+                        <div class="col-sm-6 address">
+                            <h2 role="tab" tabindex="0">Email</h2>
+                            <p role="tab" tabindex="0" class="tc-orange">
+                                contact@agencelapanthere.com
+                            </p>
+                            <h2 role="tab" tabindex="0">Adresse</h2>
+                            <p role="tab" tabindex="0" class="tc-orange">
+                                2 place Sathonay 69001 Lyon
+                            </p>
+                            <h2 role="tab" tabindex="0">Horaires</h2>
+                            <p role="tab" tabindex="0" class="tc-orange">
+                                Ouvert de 9h à 18h, du lundi au vendredi
+                            </p>
+                        </div>
+                    </div>
+					<div class="row inline-block text-left contact__form" role="tablist">
 						<h1 class="text-center hero-bloc-text white" role="tab" tabindex="0">
 							Parlons web design !
 						</h1>
-						<p class="text-center mg-lg white" role="tab" tabindex="0">
+						<p class="text-center mg-lg" role="tab" tabindex="0">
 							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 						</p>
@@ -108,67 +125,48 @@
 								</button>
 							</form>
 						</div>
-						<div class="col-sm-6 address">
-							<h2 role="tab" tabindex="0">Email</h2>
-							<p role="tab" tabindex="0">
-								contact@agencelapanthere.com
-							</p>
-							<h2 role="tab" tabindex="0">Adresse</h2>
-							<p role="tab" tabindex="0">
-								2 place Sathonay 69001 Lyon
-							</p>
-							<h2 role="tab" tabindex="0">Horaires</h2>
-							<p role="tab" tabindex="0">
-								Ouvert de 9h à 18h, du lundi au vendredi
-							</p>
-						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 <!-- Form END -->
 
 <!-- Footer -->
-			<footer class="bloc bgc-atomic-tangerine d-bloc" id="footer">
-				<div class="container bloc-sm">
-					<div class="row">
-						<div class="col-sm-12" role="tablist">
-							<p class="text-center" role="tab" tabindex="0">
-								Agence La Panthère - Agence web basée à Lyon.<br>
-							</p>
-							<div class="row row-no-gutters social">
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="https://twitter.com" aria-label="Twitter- Icône oiseau">
-											<span class="fa fa-twitter icon-md"></span>
-										</a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="https://fr-fr.facebook.com/" aria-label="Facebook- Lettre f">
-											<span class="fa fa-facebook icon-md"></span>
-										</a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="https://dribbble.com/" aria-label="Dribbble- Icône ballon de basket">
-											<span class="fa fa-dribbble icon-md"></span>
-										</a>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<div class="text-center">
-										<a class="social" href="https://www.instagram.com/" aria-label="Instagram- Icône appareil polaroïde">
-											<span class="fa fa-instagram icon-md"></span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</footer>
+            <footer class="bloc d-bloc bgc-atomic-tangerine" role="tablist">
+                <p class="text-center" role="tab" tabindex="0">
+                    <strong>La Panthère</strong><br/>
+                    Agence web basée à Lyon.
+                </p>
+                <div class="row row-no-gutters social">
+                    <div class="col-sm-3">
+                        <div class="text-center">
+                            <a class="social social-icon" href="https://twitter.com" aria-label="Twitter- Icône oiseau">
+                                <span class="fa fa-twitter icon-md icon-dark-slate-gray"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="text-center">
+                            <a class="social social-icon" href="https://fr-fr.facebook.com/" aria-label="Facebook- Lettre f">
+                                <span class="fa fa-facebook icon-md icon-dark-slate-gray"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="text-center">
+                            <a class="social social-icon" href="https://dribbble.com/" aria-label="Dribbble- Icône ballon de basket">
+                                <span class="fa fa-dribbble icon-md icon-dark-slate-gray"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="text-center">
+                            <a class="social social-icon" href="https://www.instagram.com/" aria-label="Instagram- Icône appareil polaroïde">
+                                <span class="fa fa-instagram icon-md icon-dark-slate-gray"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 <!-- Footer END -->
 
 		</main>
