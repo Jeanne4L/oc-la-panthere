@@ -678,6 +678,9 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 540px) {
+    .avoidance {
+        display: none;
+    }
     .bloc:not(#feedback) {
         padding-left: 0;
         padding-right: 0;
@@ -701,7 +704,6 @@ input:focus, textarea:focus {
     #contact img {
         display: none;
     }
-
 
     #presentation img, .presentation__description {
         width: 100%;
